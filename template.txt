@@ -1,0 +1,12 @@
+valid_terraform_variable = ${valid_terraform_variable}
+
+dollar_sign = $
+two_dollar_signs = $$
+
+function echo-green() {
+    echo "$(tput setaf 2):: $1$(tput sgr0)"
+}
+
+function echo-green-escaped() {
+    echo "$$(tput setaf 2):: $$1$$(tput sgr0)"
+}
